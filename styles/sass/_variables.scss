@@ -1,0 +1,13 @@
+$frenchBlue: #474BB5;
+$darkishBlue: #044779;
+$paleGrey: #F3FAFF;
+$brightAqua: #08FDED;
+$deepTurquoise: #03697C;
+$blogHeader: url('../funplaceAssets/blogHeader.jpg');
+$contactHeader:url('../funplaceAssets/contactHeader.jpg');
+$homeHeader: url('../funplaceAssets/homeHeader.jpg');
+:export {
+    blogHeader: $blogHeader;
+    contactHeader: $contactHeader;
+    homeHeader: $homeHeader;
+}
