@@ -96,9 +96,12 @@ app.insertLocation = (data) => {
             let subtextArg = app.crimeData.features[i].attributes.Neighbourhood;
             app.addLocation(y, x, textArg, subtextArg);
             j++;
+
         }
-        console.log(j);
+        i++;
+
     }
+    console.log(j);
 }
 app.addEventsToButtons = () => {
     app.button.addEventListener('click', (event) => {
