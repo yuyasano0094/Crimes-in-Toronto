@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crimes In Toronto</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
@@ -15,19 +16,33 @@
     </button>
     <div class="form">
         <form>
-            <label for="time">time</label>
-            <select id='yearstart'>
+            <div>
+                <label for="time">Years: </label>
+                <select id='yearstart'>
+                    <option value = "2020">2020</option>
+                </select>
+                <select id='yearEnd'>
                 <option value = "2020">2020</option>
-            </select>
-            <select id='yearEnd'>
-            <option value = "2020">2020</option>
-            </select>
-            <input id='submit' type="submit" value="Submit">
+                </select>
+            </div>
+            <div>
+                <label for="typeOfCrime">Type of Crime: </label>
+                <select id='typeOfCrime'>
+                    <option value = "Shooting">Shootings and Firearm Discharges</option>
+                    <option value = "Break">Theft Over</option>
+                    <option value = "Homicide">Homicide</option>
+                </select>
+            </div>
+            <div>
+                <input id='submit' type="submit" value="Submit">
+            </div>
+
+
         </form>
     </div>
     <div id="map"></div>
 </body>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
 <style>
     form {
         z-index: 9999;
