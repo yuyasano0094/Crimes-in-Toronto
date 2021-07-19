@@ -45,18 +45,26 @@ form {
     width: 600px;
     max-width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+form #submit,
 #open {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9998;
     border: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
+}
+
+#open {
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    z-index: 9998;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -65,4 +73,11 @@ form {
 #open.show {
     opacity: 1;
     pointer-events: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    form,
+    #open {
+        width: 100%;
+    }
 }
