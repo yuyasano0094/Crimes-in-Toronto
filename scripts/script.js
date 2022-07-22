@@ -63,7 +63,7 @@ app.setUpForm = () => {
     }).then(app.chooseYear);
 }
 app.setUpMap = () => {
-    L.mapquest.key = 'lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24';
+    L.mapquest.key = 'URw98lr6DQEQWyljAl6efGlKuoZlTqxS';
     app.map = L.mapquest.map('map', {
         center: [43.6532, -79.3832],
         layers: L.mapquest.tileLayer('dark'),
